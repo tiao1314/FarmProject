@@ -1,0 +1,14 @@
+
+package FarmProject;
+
+
+
+public interface Milkable {
+    public double milk();
+    
+    
+    
+    
+        
+    
+}
