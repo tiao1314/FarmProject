@@ -3,8 +3,7 @@ package FarmProject;
 
 
 public class MilkTank {
-//    private String dairyCowMilkTank;
-//    private String goatMilkTank;
+
     private int standardCapacity = 2000;
     private int customerCapacity;
     MilkingMachine mc;
