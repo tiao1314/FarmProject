@@ -1,17 +1,22 @@
-package FarmProject;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
+ */
 
-
-
+/**
+ *
+ * @author tiao
+ */
 public class Shed {
-    
+
+    // id / room
     private int id;
     private String room;
-    MilkingMachine mc;
 
-    public Shed(int id, String room, MilkingMachine mc) {
+
+    public Shed(int id, String room) {
         this.id = id;
         this.room = room;
-        this.mc = mc;
     }
 
     public Shed() {
@@ -33,59 +38,15 @@ public class Shed {
         this.room = room;
     }
 
-    public MilkingMachine getMc() {
-        return mc;
-    }
-
-
-
-
-    public void setMc(MilkingMachine mc) {
-        this.mc = mc;
-    }
-
-    public Shed getMilkTank()
-    {
-        return new Shed();
-    }
-
-    public void installMilkingMachine(MilkingMachine milkingMachine) 
-    {
-        this.mc = milkingMachine;
-    }
-    
-    //method public void milkAnimal(Animal animal) milks the animal with the milking machine, the method throws an IllegalStateException if the milking machine is not installed
-    public void milkAnimal(Animal animal) 
-    {
-        if (mc == null) {
-            throw new IllegalStateException("No milking machine installed");
-        }
-        mc.milk((Milkable) animal);
-    }
-
-    //method public void milkAnimal(Collection<Animal> animals) milks the herd of animals with the milking machine, the method throws an IllegalStateException if the milking machine is not installed
-    public void milkAnimal(Animal[] animals) 
-    {
-        if (mc == null) {
-            throw new IllegalStateException("No milking machine installed");
-        }
-        for (Animal animal : animals) {
-            mc.milk((Milkable) animal);
-        }
-    }
-    
-    
-        
-    
-    
-
     @Override
     public String toString() {
-        return "Shed{" + "id=" + id + ", room=" + room + ", mc=" + mc + '}';
+        return "Shed{" + "id=" + id + ", room=" + room + '}';
     }
     
+
+
     
-    
-    
-    
+
+
+
 }

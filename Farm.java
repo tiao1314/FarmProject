@@ -1,14 +1,19 @@
-package FarmProject;
-
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
+ */
 import java.util.ArrayList;
-
-
+/**
+ *
+ * @author tiao
+ */
 public class Farm {
+    
+
     private int id;
     private String owner;
-    private ArrayList<Animal> animals;
-    
+    private ArrayList<Animal> herds;
+
     Shed shed;
 
     public Farm(int id, String owner, ArrayList<Animal> animals, Shed shed) {
@@ -18,12 +23,10 @@ public class Farm {
         this.shed = shed;
     }
 
-    
-
-    
+    //constructor
 
     public Farm() {
-        
+
     }
 
     public int getId() {
@@ -58,17 +61,14 @@ public class Farm {
         this.animals = animals;
     }
 
+    //override toString method
     @Override
     public String toString() {
         return "Farm{" + "id=" + id + ", owner=" + owner + ", animals=" + animals + ", shed=" + shed + '}';
     }
-
     
 
     
-    
-    
-    
+
     
 }
-

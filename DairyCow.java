@@ -1,18 +1,29 @@
-package FarmProject;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
+ */
 
+/**
+ *
+ * @author tiao
+ */
+public class DairyCow {
 
+    
+    // id, name, udders
 
-public class DairyCow extends Animal implements Milkable
-{
-    private int id; 
+    private int id;
     private String name;
     private double udders;
 
+    //constructor
     public DairyCow(int id, String name, double udders) {
         this.id = id;
         this.name = name;
         this.udders = udders;
     }
+
+    //getters and setters
 
     public DairyCow() {
     }
@@ -40,67 +51,40 @@ public class DairyCow extends Animal implements Milkable
     public void setUdders(double udders) {
         this.udders = udders;
     }
-    
-    public DairyCow DairyCow()
-    {
-        return new DairyCow();
 
-    } 
-    
-    public DairyCow Cow(String name)
-    {
-        return new DairyCow();
-    }
-    
+    // udder capacity is a random number between 20 and 40
     public double udders()
     {
         return 20 + (40 - 20) * Math.random();
     }
-   
-    // method creates a new cow with a random name
-    public DairyCow createCow()
+
+    //DairyCow method
+    public DairyCow DairyCow()
     {
-        String[] names = {"Bella", "Lilly", "Lola", "Lucy", "Molly", "Maggie", "Sadie", "Sophie", "Zoe", "Zoey"};
-        int random = (int)(Math.random() * names.length);
-        String name = names[random];
-        return new DairyCow(0, name, udders());
+        return new DairyCow();
     }
 
-    //method creates a new cow of the given name
-    public DairyCow createCow(String name)
+    //Cow method
+    public DairyCow Cow(String name)
     {
-        return new DairyCow(0, name, udders());
+        return new DairyCow();
     }
 
-    //method String getName() 
-    public String getName(DairyCow cow)
+    //string getName method
+    public String getName(String name)
     {
-        return cow.getName();
+        return name;
     }
 
-    //method double getCapacity() returns the udder capacity
-    public double getCapacity(DairyCow cow)
+    //getCapacity method
+    public double getCapacity()
     {
-        return cow.getUdders();
+        return udders;
     }
 
     @Override
     public String toString() {
-        return "DairyCows{" + "id=" + id + ", name=" + name + ", udders=" + udders + '}';
+        return "DairyCow{" + "id=" + id + ", name=" + name + ", udders=" + udders + '}';
     }
 
-    @Override
-    public int compareTo(Animal o) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public double milk() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
-    
-    
-    
-    
 }
