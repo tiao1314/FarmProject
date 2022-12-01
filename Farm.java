@@ -8,27 +8,23 @@ import java.util.ArrayList;
  * @author tiao
  */
 public class Farm {
-    
 
+    // id owner shed
     private int id;
     private String owner;
-    private ArrayList<Animal> herds;
+    private ArrayList<Shed> shed;
 
-    Shed shed;
-
-    public Farm(int id, String owner, ArrayList<Animal> animals, Shed shed) {
+    //constructor
+    public Farm(int id, String owner, ArrayList<Shed> shed) {
         this.id = id;
         this.owner = owner;
-        this.animals = animals;
         this.shed = shed;
     }
 
-    //constructor
-
     public Farm() {
-
     }
 
+    //getters and setters
     public int getId() {
         return id;
     }
@@ -45,30 +41,22 @@ public class Farm {
         this.owner = owner;
     }
 
-    public Shed getShed() {
+    public ArrayList<Shed> getShed() {
         return shed;
     }
 
-    public void setShed(Shed shed) {
+    public void setShed(ArrayList<Shed> shed) {
         this.shed = shed;
     }
 
-    public ArrayList<Animal> getAnimals() {
-        return animals;
-    }
-
-    public void setAnimals(ArrayList<Animal> animals) {
-        this.animals = animals;
-    }
-
-    //override toString method
+    //toString
     @Override
     public String toString() {
-        return "Farm{" + "id=" + id + ", owner=" + owner + ", animals=" + animals + ", shed=" + shed + '}';
+        return "Farm{" + "id=" + id + ", owner=" + owner + ", shed=" + shed + '}';
     }
-    
+
+
 
     
 
-    
 }

@@ -7,64 +7,42 @@
  *
  * @author tiao
  */
-public class DairyCow {
+public class DairyCow extends Animal {
 
+    private int udders;
     
-    // id, name, udders
-
-    private int id;
-    private String name;
-    private double udders;
-
-    //constructor
-    public DairyCow(int id, String name, double udders) {
-        this.id = id;
-        this.name = name;
+    public DairyCow(String name, int id, int udders) {
+        super(name, id);
         this.udders = udders;
+    }
+
+    //no arg constructor
+    public DairyCow() {
     }
 
     //getters and setters
 
-    public DairyCow() {
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public double getUdders() {
+    public int getUdders() {
         return udders;
     }
 
-    public void setUdders(double udders) {
+    public void setUdders(int udders) {
         this.udders = udders;
     }
 
-    // udder capacity is a random number between 20 and 40
-    public double udders()
-    {
-        return 20 + (40 - 20) * Math.random();
+    //  Udder capacity is a random value between 20 and 40
+    public int udderCapacity() {
+        int udderCapacity = (int) (Math.random() * 20 + 20);
+        return udderCapacity;
     }
 
-    //DairyCow method
+    // creates a new cow with a random name
     public DairyCow DairyCow()
     {
         return new DairyCow();
     }
 
-    //Cow method
+    // cow method
     public DairyCow Cow(String name)
     {
         return new DairyCow();
@@ -75,16 +53,22 @@ public class DairyCow {
     {
         return name;
     }
-
+    
     //getCapacity method
     public double getCapacity()
     {
         return udders;
-    }
+     }
+    
 
+    //toString
     @Override
     public String toString() {
-        return "DairyCow{" + "id=" + id + ", name=" + name + ", udders=" + udders + '}';
+        return "DairyCow{" + "udders=" + udders + '}';
     }
+
+    
+
+    
 
 }
