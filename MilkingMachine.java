@@ -10,6 +10,7 @@
 public class MilkingMachine {
 
     MilkTank tank;
+    Milkable milkable;
     
 
     public MilkingMachine() {
