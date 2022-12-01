@@ -73,7 +73,7 @@ public class Shed {
         if (milkingMachine == null) {
             throw new IllegalStateException("Milking machine is not installed");
         }
-        milkingMachine.milk(animals);
+        MilkTank.addToTank(animals);
     }
 
     // public void milkAnimal(Collection<Animal> animals) milks the herd of animals with the
