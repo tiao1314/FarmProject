@@ -76,8 +76,11 @@ public class Shed {
         milkingMachine.milk(animals);
     }
 
-
-
+    // public void milkAnimal(Collection<Animal> animals) milks the herd of animals with the
+    //milking machine, the method throws an IllegalStateException if the milking machine is not
+    //installed
+    
+    //Not sure how to do this 
 
     //toString
     @Override
