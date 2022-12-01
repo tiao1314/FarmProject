@@ -36,12 +36,14 @@ public class MilkingMachine {
     // }
 
     // void milk(Milkable milkable) milks the cow and fills the connected milk tank; the method returns an IllegalStateException if no tank has been installed
+
+    // fixed the milk bc i used the wrong method name for 
     public void milk(Milkable milkable) {
         if (tank == null) {
             // if tank is null throw exception but with text message
             throw new IllegalStateException("No tank installed");
         }
-        tank.addMilk(milkable.milk());
+        tank.addToTank(milkable.milk());
     }
 
 
