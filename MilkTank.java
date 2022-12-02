@@ -4,11 +4,12 @@
  */
 public class MilkTank {
 
-    private int standardCapacity = 2000;
-    private int customerSpecificCapacity;
+    private double standardCapacity = 2000;
+    private double customerSpecificCapacity;
+    
 
     //constructor
-    public MilkTank(int customerSpecificCapacity) {
+    public MilkTank(double customerSpecificCapacity) {
         this.customerSpecificCapacity = customerSpecificCapacity;
     }
 
@@ -17,21 +18,22 @@ public class MilkTank {
     }
 
     //getters and setters
-    public int getStandardCapacity() {
+    public double getStandardCapacity() {
         return standardCapacity;
     }
 
-    public void setStandardCapacity(int standardCapacity) {
+    public void setStandardCapacity(double standardCapacity) {
         this.standardCapacity = standardCapacity;
     }
 
-    public int getCustomerSpecificCapacity() {
+    public double getCustomerSpecificCapacity() {
         return customerSpecificCapacity;
     }
 
-    public void setCustomerSpecificCapacity(int customerSpecificCapacity) {
+    public void setCustomerSpecificCapacity(double customerSpecificCapacity) {
         this.customerSpecificCapacity = customerSpecificCapacity;
     }
+
 
     // get standard capacity
     public double getCapacity() {
@@ -44,11 +46,13 @@ public class MilkTank {
     }
 
     //addToTank method
-    // if amount is bigger than freeSpace, then only freeSpace is added else amount is added
     public void addToTank(double amount) {
-        if (amount > freeSpace()) {
-            customerSpecificCapacity += freeSpace();
-        } else {
+        if(amount + customerSpecificCapacity > standardCapacity)
+            {
+                System.out.println("Tank is full");
+            }
+        else
+        {
             customerSpecificCapacity += amount;
         }
     }
