@@ -16,6 +16,7 @@ public class Shed {
 
     //link to MilkingMachine 
     MilkingMachine milkingMachine;
+    Milkable milkable;
 
     //constructor
     public Shed(int id, String room, ArrayList<Animal> animals) {
@@ -69,11 +70,10 @@ public class Shed {
     //public void milkAnimal(Animal animal) milks the animal with the milking machine, the
     //method throws an IllegalStateException if the milking machine is not installed
     // milk animal method searches for the animal in the shed and milks it
-    public void milkAnimal(Shed animals) {
-        if (milkingMachine == null) {
-            throw new IllegalStateException("Milking machine is not installed");
+    public void milkAnimal(Animal animal) {
+        if(animal instanceof Milkable) {
+            this.milkingMachine.milk((Milkable) animal);
         }
-        MilkTank.addToTank(animals);
     }
 
     // public void milkAnimal(Collection<Animal> animals) milks the herd of animals with the
