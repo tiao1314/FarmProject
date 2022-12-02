@@ -10,7 +10,6 @@
 public class MilkingMachine {
 
     MilkTank tank;
-    Milkable milkable;
     
 
     public MilkingMachine() {
@@ -45,6 +44,13 @@ public class MilkingMachine {
         }
         tank.addToTank(milkable.milk());
     }
+
+    // toString()
+    @Override
+    public String toString() {
+        return "MilkingMachine{" + "tank=" + tank + '}';
+    }
+
 
 
 
