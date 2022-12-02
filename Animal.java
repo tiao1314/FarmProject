@@ -9,11 +9,12 @@
  */
 
 //implements Comparable<Animal> down below
-public abstract class Animal {
+ abstract class Animal {
 
     private String name;
     private int id;
 
+    //constructors
     public Animal(String name, int id) {
         this.name = name;
         this.id = id;
