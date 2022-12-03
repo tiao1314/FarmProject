@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="[https://github.com/Don-Cryptus/world-of-gaming](https://github.com/tiao1314/FarmProject)">
-    <img src="src/assets/images/icon.png" alt="Logo" width=200/>
+  <a href="[https://github.com/tiao1314/FarmProject](https://github.com/tiao1314/FarmProject)">
+    
   </a>
 
   <p align="center">
@@ -16,7 +16,7 @@
 
 </p>
 
-<img align="center" alt="Coding" width="400" src="https://i.gifer.com/QnBK.mp4">
+<img align="center" alt="Coding" width="400" src="![image](https://user-images.githubusercontent.com/97777378/205461737-677d405b-92b4-49cf-b029-2f3a3c41c1e7.png)">
 
 ## About The Project
 
