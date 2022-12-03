@@ -60,15 +60,34 @@ public class Shed {
     //public void milkAnimal(Animal animal) milks the animal with the milking machine, the
     //method throws an IllegalStateException if the milking machine is not installed
     // milk animal method searches for the animal in the shed and milks it
+
+    //check if animal is milkable
+
+    // checks the individual animal to see if it is milkable "inplements milkable"
     public void milkAnimal(Animal animal) {
-        if(animal instanceof Milkable) {
-            this.milkingMachine.milk((Milkable) animal);
+        if (animal instanceof Milkable) {
+            milkingMachine.milk((Milkable) animal); // casting animal to milkable
+        } else {
+            throw new IllegalStateException("Animal is not milkable");
         }
     }
 
     // public void milkAnimal(Collection<Animal> animals) milks the herd of animals with the
     //milking machine, the method throws an IllegalStateException if the milking machine is not
     //installed
+
+    //milk all animals in the shed
+    public void milkAnimal(ArrayList<Animal> animals) { // milk all animals in the shed
+        for (Animal animal : animals) { // for each animal in the arraylist
+            if (animal instanceof Milkable) { // check if animal is milkable
+                milkingMachine.milk((Milkable) animal);// casting animal to milkable
+            } else {
+                throw new IllegalStateException("Animal is not milkable");
+            }
+        }
+    }
+
+
     
     //Not sure how to do this 
 

@@ -43,7 +43,7 @@ public class MilkingMachine {
             throw new IllegalStateException("No tank installed");
         }
         else {
-            // if tank is not null then milk the cow
+            // we are adding tank if they are milkable
             tank.addToTank(milkable.milk());
         }
             
