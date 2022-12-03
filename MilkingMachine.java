@@ -42,8 +42,14 @@ public class MilkingMachine {
             // if tank is null throw exception but with text message
             throw new IllegalStateException("No tank installed");
         }
-        tank.addToTank(milkable.milk());
-    }
+        else {
+            // if tank is not null then milk the cow
+            tank.addToTank(milkable.milk());
+        }
+            
+        }
+            
+    
 
     // toString()
     @Override

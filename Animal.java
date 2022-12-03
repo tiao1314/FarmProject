@@ -8,7 +8,7 @@
  * @author tiao
  */
 
-//implements Comparable<Animal> down below
+
  abstract class Animal {
 
     private String name;

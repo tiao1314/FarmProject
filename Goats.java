@@ -7,7 +7,7 @@
  *
  * @author tiao
  */
-public class Goats extends Animal {
+public class Goats extends Animal implements Milkable {
 
     private int udders;
     
@@ -42,6 +42,11 @@ public class Goats extends Animal {
     @Override
     public String toString() {
         return "DairyCow{" + "udders=" + udders + '}';
+    }
+
+    @Override
+    public double milk() {
+        return 0;
     }
 
     
