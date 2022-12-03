@@ -16,8 +16,13 @@
 
 </p>
 
-<img align="center" alt="Coding" width="400" src="![image](https://user-images.githubusercontent.com/97777378/205461737-677d405b-92b4-49cf-b029-2f3a3c41c1e7.png)">
+<div align"center">
+<img align="center" style="position: absolute; top:0;left:0;right:0;bottom:0; margin: 0 auto;display: block" src="https://media1.tenor.com/images/0c62834bf50710843c152709158e0041/tenor.gif?itemid=27191675">
+</div>
 
+
+  
+  
 ## About The Project
 
 
