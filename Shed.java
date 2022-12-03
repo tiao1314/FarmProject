@@ -10,7 +10,6 @@ import java.util.ArrayList;
 public class Shed {
     // id , room , animals
     private int id;
-    private String room;
     //multiple animals in a shed
     private ArrayList<Animal> animals;
 
@@ -19,9 +18,8 @@ public class Shed {
     Milkable milkable;
 
     //constructor
-    public Shed(int id, String room, ArrayList<Animal> animals) {
+    public Shed(int id, ArrayList<Animal> animals) {
         this.id = id;
-        this.room = room;
         this.animals = animals;
     }
 
@@ -36,15 +34,7 @@ public class Shed {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public String getRoom() {
-        return room;
-    }
-
-    public void setRoom(String room) {
-        this.room = room;
-    }   
+    } 
 
     public ArrayList<Animal> getAnimals() {
         return animals;
@@ -85,7 +75,7 @@ public class Shed {
     //toString
     @Override
     public String toString() {
-        return "Shed{" + "id=" + id + ", room=" + room + ", animals=" + animals + '}';
+        return "Shed{" + "id=" + id + ", animals=" + animals + '}';
     }
 
 
