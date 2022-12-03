@@ -11,7 +11,7 @@ public class Farm {
 
     // id owner shed
     private int id;
-    private String owner;
+    private String owner ;
     // multiple sheds in a farm
     private ArrayList<Shed> shed;
 
