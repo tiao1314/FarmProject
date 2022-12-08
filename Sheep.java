@@ -18,7 +18,7 @@ public class Sheep extends Animal {
 
     //constructors
     public Sheep(String name, int id, int weight, int age, String pedigree) {
-        super(name, id);
+        super(name);
         this.weight = weight;
         this.age = age;
         this.pedigree = pedigree;

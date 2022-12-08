@@ -12,7 +12,7 @@ public class Goats extends Animal implements Milkable {
     private int udders;
     
     public Goats(String name, int id, int udders) {
-        super(name, id);
+        super(name);
         this.udders = udders;
     }
 

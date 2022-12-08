@@ -50,6 +50,15 @@ public class Farm {
         this.shed = shed;
     }
 
+    //creates farm object and adds it to the array list
+    public void addFarm(int id, String owner, ArrayList<Shed> shed){
+        Farm farm = new Farm(id, owner, shed);
+        Farm.addFarm(farm);
+    }
+
+    private static void addFarm(Farm farm) {
+    }
+
     //toString
     @Override
     public String toString() {

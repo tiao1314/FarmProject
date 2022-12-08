@@ -13,11 +13,13 @@
 
     private String name;
     private int id;
+    private static int idcount = 1;
 
     //constructors
-    public Animal(String name, int id) {
+    public Animal(String name) {
         this.name = name;
-        this.id = id;
+        this.id = idcount;
+        idcount++;  
     }
 
     //no arg constructor

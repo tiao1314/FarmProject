@@ -13,7 +13,7 @@ public class DairyCow extends Animal implements Milkable {
     
     
     public DairyCow(String name, int id) {
-        super(name, id);
+        super(name);
         this.udders = udderCapacity();
     }
 
@@ -32,7 +32,7 @@ public class DairyCow extends Animal implements Milkable {
     }
 
     //  Udder capacity is a random value between 20 and 40
-        public int udderCapacity() {
+        public static int udderCapacity() {
         int udderCapacity = (int) (Math.random() * 20 + 20);
         
 
