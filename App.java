@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        try {
         
         // farm arraylist
         
@@ -18,11 +19,68 @@ public class App {
         System.out.println("====================================");
         System.out.println("\n");
         System.out.println("Please enter your choice: ");
-        
 
-        int choice;
+        // input validation
+
+        // checks if menuOption is greater than or equal to 1 and less than or equal to 2, or if it is equal to 12.
+        // If either of these conditions is true, the loop is exited using the break statement.
 
         Scanner input = new Scanner(System.in);
+        int menuOption;
+        while (true) {
+            System.out.println("Please enter your choice: ");
+            menuOption = input.nextInt();
+            if (menuOption >= 1 && menuOption <= 2 || menuOption == 12) {
+                break;
+            }
+            System.out.println("Invalid input. Please try again.");
+        }
+
+
+        
+        // tried to do enum
+
+
+
+        
+        // // Define the MenuOption enum
+        // public enum MenuOption {
+        //     ADD_FARM,
+        //     PRINT_DETAILS,
+        //     EXIT_APPLICATION
+        // }
+
+        // // Declare a variable of the MenuOption type
+        // MenuOption choice;
+
+        // Scanner input = new Scanner(System.in);
+        // System.out.println("Please enter your choice: ");
+        // int menuOption = input.nextInt();
+
+        // // Assign a value to the choice variable based on the user's input
+        // if (menuOption == 1) {
+        //     choice = MenuOption.ADD_FARM;
+        // } else if (menuOption == 2) {
+        //     choice = MenuOption.PRINT_DETAILS;
+        // } else if (menuOption == 12) {
+        //     choice = MenuOption.EXIT_APPLICATION;
+        // }
+
+        // // Use the choice variable in a switch statement to determine which option the user has selected
+        // switch (choice) {
+        //     case ADD_FARM:
+        //         // code to add a new farm
+        //         break;
+        //     case PRINT_DETAILS:
+        //         // code to print the details of the farm
+        //         break;
+        //     case EXIT_APPLICATION:
+        //         // code to exit the application
+        //         break;
+        // }
+
+        int choice;
+        
         choice = input.nextInt();
 
         Farm f1 = new Farm();
@@ -248,7 +306,7 @@ public class App {
 
 
         
-        
+    
         
 
         

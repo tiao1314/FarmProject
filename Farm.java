@@ -14,6 +14,7 @@ public class Farm {
     private String owner ;
     // multiple sheds in a farm
     private ArrayList<Shed> shed;
+    private static int idcount = 1;
 
     //constructor
     public Farm(int id, String owner, ArrayList<Shed> shed) {
