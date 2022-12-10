@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        try {
+        
         
         // farm arraylist
         
@@ -20,8 +20,15 @@ public class App {
         System.out.println("\n");
         System.out.println("Please enter your choice: ");
 
-        // input validation
 
+        //tried to do try and catch but its too hard for me to add it when my code is large.
+        // try {
+        // catch (Exception e) {
+        //     System.out.println("Invalid input. Please try again.");
+        // }
+
+
+        // input validation
         // checks if menuOption is greater than or equal to 1 and less than or equal to 2, or if it is equal to 12.
         // If either of these conditions is true, the loop is exited using the break statement.
 
@@ -87,19 +94,20 @@ public class App {
 
 
 
-
-
+            
+            
         while(choice != 12){
 
             if (choice ==1){
                 
-
+                
                 System.out.println("====================================");
                 // auto generate id for farm
                 int farmId = (int) (Math.random() * 100 + 1);
                 System.out.println("Enter the farm owner: ");
                 // store farm owner in farm arraylist
                 String farmOwner = input.next();
+                
                 // add shed to farm
                 int shedId = (int) (Math.random() * 100 + 1);
                 // create a milk tankobject
@@ -110,6 +118,7 @@ public class App {
                 System.out.println("Cannot go above 2000 litres");
                 //if milk tank capacity is greater than 2000 litres
                 // ask user to enter a new value
+                
                 
                 int milkTankCapacity = input.nextInt();
                 MilkTank milkTank = new MilkTank(milkTankCapacity);
@@ -131,12 +140,13 @@ public class App {
                 ArrayList <Animal> animals = new ArrayList<>();
 
                 if (animalChoice == 1){
-
+                    
                     System.out.println("Enter BeefCow Name :");
                     String beefCowName = input.next();
                     // auto generate my beefcow id
                     int beefCowId = (int) (Math.random() * 100 + 1);
                     System.out.println("Enter BeefCow weight");
+                    
                     int beefCowWeight = input.nextInt();
                     System.out.println("Enter BeefCow age");
                     int beefCowAge = input.nextInt();
@@ -144,6 +154,7 @@ public class App {
                     String beefCowPedigree = input.next();
                     Animal beef = new BeefCow(beefCowName,beefCowId,beefCowWeight,beefCowAge,beefCowPedigree);
                     animals.add(beef);
+                    
                 }
 
                 else if (animalChoice == 2){
@@ -310,7 +321,7 @@ public class App {
         
 
         
-    }
-
     
+
+}
 }
